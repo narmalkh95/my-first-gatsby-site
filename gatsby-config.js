@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "my-first-gatsby-site",
+    title: "test for site title",
   },
   plugins: [
     "gatsby-plugin-sass",
@@ -12,9 +12,18 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "images",
-        path: "./src/images/",
+        path: `${__dirname}/src/images`,
       },
       __key: "images",
+    },
+
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "homepage",
+        path: `${__dirname}/homepage`,
+      },
+      __key: "homepage",
     },
   ],
 };

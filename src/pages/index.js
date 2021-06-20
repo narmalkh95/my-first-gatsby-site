@@ -1,11 +1,14 @@
 import * as React from 'react'
-import Layout from '../components/layout'
+import '../styles/index.scss';
+import NavBar from '../components/ReusableComponents/NavBar/NavBar'
+import HomePage from "../components/HomePage/HomePage";
 
 const IndexPage = () => {
   return (
-    <Layout pageTitle="Home Page">
-      <p>I'm making this by following the Gatsby Tutorial.</p>
-    </Layout>
+    <main>
+      <NavBar/>
+      <HomePage/>
+    </main>
   )
 }
 

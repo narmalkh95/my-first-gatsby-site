@@ -1,0 +1,57 @@
+@import "src/styles/variables";
+
+.home_page_div {
+  color: $black;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.blinking_div {
+  display: flex;
+
+  p:first-child {
+    margin-right: .3em;
+  }
+}
+
+.getStartedDiv {
+  display: flex;
+
+  > div {
+    width: 50%;
+  }
+}
+
+.trustedSliderImageDiv {
+  width: 100%;
+  max-width: 120px;
+  margin: auto;
+}
+
+.comment_score_div {
+  display: flex;
+  > div {
+    &:first-child {
+      width: 400px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    &:nth-child(2) {
+      flex-grow: 1;
+    }
+  }
+}
+
+.score_div {
+  width: 50%;
+  > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  p {
+    font-weight: 700;
+  }
+}

@@ -1,0 +1,39 @@
+.home_page_inner {
+  .trusted_slider {
+
+    .slick-prev, .slick-next {
+      width: 25px;
+      height: 35px;
+      z-index: 1;
+    }
+
+    .slick-next:before, .slick-prev:before {
+      content: "";
+      display: inline-block;
+      background-repeat: no-repeat;
+      position: relative;
+      width: 25px;
+      height: 35px;
+      //background-image: url('../../../images/slider/right-arrow.svg');
+      background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAAUVBMVEVHcEwVrVcWrFkVrFkWrlkVrVkVrFkVq1UWrFkWrFkVrVgVrlgWrFgVqlcYsFsVr1oU/64XrVgVrlkWrVkWrFkVrFgUq1cWrVkWq1kAIlcWrFlfyeifAAAAGXRSTlMAJPmxLm2zC+r8Y1/FLxUwY2Nh2d6gZMPoYibNxQAAAHlJREFUKM/Vk8kKgDAMRLvZ1Srukv//UCvVk2QQb851yGOSMEI85ZJfOsHJNZ7mnrWjp6C5aTcQhTYDstIsei1kKxF5M5BsUGaeHM/MmJzhNTA5fyObCZCrbSV8orL8F2s03scne8FPaPWi8ef8hGpwlQiMu7TfFTwAPmAJCc6AhOUAAAAASUVORK5CYII=');
+    }
+
+    .slick-next {
+      right: 0;
+
+      &:before {
+        transform: rotateY(180deg);
+      }
+    }
+
+    .slick-prev {
+      left: 0;
+    }
+
+    .slick-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
