@@ -4,6 +4,7 @@ import React from 'react';
 import Slider from "react-slick";
 import './rendCommentsSlider.scss';
 import {StaticImage} from "gatsby-plugin-image";
+import Link from "gatsby-link";
 
 const CustomBtn = ({className, onClick}) => {
   return (
@@ -39,7 +40,7 @@ const RendCommentsSlider = () => {
       <Slider {...sliderSettings}>
         {Array(9).fill(1).map((x, index) => {
           return (
-            <div className="item" key={index} onClick={() => window.open(link)}>
+            <Link to={link} target="_blank" className="item" key={index}>
               <StaticImage alt="Logo" src={'../../../../images/quote.svg'} className={'quote'}/>
               <div className={'comment_div'}>
                 <p>
@@ -58,7 +59,7 @@ const RendCommentsSlider = () => {
               </div>
 
               <StaticImage className={'company_logo'} alt="User" src={'../../../../images/capterra.svg'}/>
-            </div>
+            </Link>
           )
         })}
       </Slider>
