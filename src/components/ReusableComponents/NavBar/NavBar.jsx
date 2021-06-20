@@ -6,7 +6,7 @@ import {useEffect, useState} from "react";
 import DefaultGreenBtn from "../Buttons/DefaultGreenBtn";
 
 const NavBar = () => {
-  const [scrollTop, setScrollTop] = useState(window.scrollY / 50);
+  const [scrollTop, setScrollTop] = useState(0);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll, {passive: true});
